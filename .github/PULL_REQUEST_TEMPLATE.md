@@ -1,4 +1,4 @@
-<!-- If you are new to the Delta-V repository, please read the [Contributing Guidelines](https://github.com/DeltaV-Station/Delta-v/blob/master/CONTRIBUTING.md) -->
+<!-- If you are new to the Panta Rhei repository, please read the [Contributing Guidelines](https://github.com/Floof-Station/Panta-Rhei/blob/master/CONTRIBUTING.md) -->
 
 ## About the PR
 <!-- What did you change? -->
