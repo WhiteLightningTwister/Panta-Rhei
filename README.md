@@ -1,15 +1,24 @@
 <div class="header" align="center">  
-<img alt="Delta-V Logo" width="128" height="128" src="https://raw.githubusercontent.com/DeltaV-Station/Delta-v/master/Resources/Textures/Logo/logo.png" />
-<!-- <img alt="Delta-V Banner" width="512" height="126" src="https://raw.githubusercontent.com/DeltaV-Station/Delta-v/master/Resources/Textures/Logo/banner.png" /> -->
+<img alt="Panta Rhei Logo" width="128" height="128" src="https://raw.githubusercontent.com/Floof-Station/Panta-Rhei/master/Resources/Textures/Logo/logo.png" />
 </div>
 
-Delta-V is a fork of [Space Station 14](https://github.com/space-wizards/space-station-14), embracing a mixture of classic SS13 chaos and experimentation only possible with the new engine.
+## Panta Rhei is the code name of the endeavor to rebase [Floof Station](https://github.com/Floof-Station/Floof-Station) on top of [Delta-V](https://github.com/DeltaV-Station/Delta-v).
+
+Panta Rhei is a fork of [Delta-V](https://github.com/DeltaV-Station/Delta-v), which is a fork of [Space Station 14](https://github.com/space-wizards/space-station-14), embracing a mixture of classic SS13 chaos and experimentation only possible with the new engine.
 
 Space Station 14 is a remake of SS13 that runs on [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), a homegrown engine written in C#.
 
-### Delta-V is a continuation of the [Nyanotrasen](https://www.nyanotrasen.moe/) fork. Any work done in a non-base namespace may contain incorrect attributes due to rewrites and recommitting.
+### Panta Rhei is a continuation of the [Nyanotrasen](https://www.nyanotrasen.moe/) fork. Any work done in a non-base namespace may contain incorrect attributes due to rewrites and recommitting.
 
 ## Links
+
+#### Panta Rhei
+<div class="header" align="center">
+
+[Discord](https://discord.gg/pmxfNx8gRS)
+##### _ The rest is to be determined. - M3739_
+
+</div>
 
 #### DeltaV
 <div class="header" align="center">
@@ -34,19 +43,19 @@ Additionally, see these resources for license and attribution information:
 
 ## Contributing
 
-We are happy to accept contributions from anybody. Get in Discord if you want to help. We've got a [list of issues](https://github.com/DeltaV-Station/Delta-v/issues) that need to be done and anybody can pick them up. Don't be afraid to ask for help either!
+We are happy to accept contributions from anybody. Get in Discord if you want to help. We've got a [list of issues](https://github.com/Floof-Station/Panta-Rhei/issues) that need to be done and anybody can pick them up. Don't be afraid to ask for help either!
 
-Make sure to read [CONTRIBUTING.md](/CONTRIBUTING.md) if you are new to Delta-V!
+Make sure to read [CONTRIBUTING.md](/CONTRIBUTING.md) if you are new to Panta Rhei!
 
 ## Building
 
 1. Clone this repo:
 ```shell
-git clone https://github.com/DeltaV-Station/Delta-v.git
+git clone https://github.com/Floof-Station/Panta-Rhei.git
 ```
 2. Go to the project folder and run `RUN_THIS.py` to initialize the submodules and load the engine:
 ```shell
-cd Delta-v
+cd Panta-Rhei
 python RUN_THIS.py
 ```
 3. Compile the solution:  

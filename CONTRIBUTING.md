@@ -1,15 +1,19 @@
-# Delta-V Contributing Guidelines
+# Panta Rhei Contributing Guidelines
 
-Generally we follow [upstream's PR guidelines](https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html) for code quality and such.
+###### _(Note that this has been largely borrowed from Delta-V. In the future, we will replace most of these examples with examples based on our native developments. For now, this is a placeholder. - M3739)_
+
+Generally we follow [Wizden's PR guidelines](https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html) for code quality and such.
 
 Importantly do not make webedits, copied verbatim from above:
 > Do not use GitHub's web editor to create PRs. PRs submitted through the web editor may be closed without review.
 
-Upstream is the [space-wizards/space-station-14](https://github.com/space-wizards/space-station-14) repository that wizden runs on.
+Upstream is the [DeltaV-Station/Delta-v](https://github.com/DeltaV-Station/Delta-v) repository that Delta-V runs on.
 
-# Content specific to Delta-V
+# Content specific to Panta Rhei
 
-In general anything you create from scratch (not modifying something that exists from upstream) should go in a DeltaV subfolder, `_DV`.
+In general anything you create from scratch (not modifying something that exists from upstream) should go in the Floof Station subfolder, `_Floof`.
+
+###### _(Remind me to redo this section to feature our native developments as examples. - M3739)_
 
 Examples:
 - `Content.Server/_DV/Chapel/SacrificialAltarSystem.cs`
@@ -18,7 +22,7 @@ Examples:
 - `Resources/Textures/_DV/Icons/cri.rsi`
 - `Resources/Locale/en-US/_DV/shipyard/shipyard-console.ftl`
 - `Resources/ServerInfo/Guidebook/_DV/AlertProcedure.xml`
-  Note that guidebooks go in `ServerInfo/Guidebook/_DV` and not `ServerInfo/_DV`!
+  Note that guidebooks go in `ServerInfo/Guidebook/_Floof` and not `ServerInfo/_Floof`!
 
 # Changes to upstream files
 
@@ -36,12 +40,14 @@ As an aside, fluent (.ftl) files **do not support comments on the same line** as
 
 ## Examples of comments in upstream files
 
+###### _(Remind me to redo this section to feature our native developments as examples. - M3739)_
+
 A single line comment on a changed yml field:
 ```yml
 - type: entity
   parent: BasePDA
   id: SciencePDA
-  name: epistemics PDA # DeltaV - Epistemics Department replacing Science
+  name: epistemics PDA # Panta Rhei - Epistemics Department replacing Science
 ```
 
 A pair of comments enclosing a list of added items to starting gear:
@@ -49,15 +55,15 @@ A pair of comments enclosing a list of added items to starting gear:
   storage:
     back:
     - EmergencyRollerBedSpawnFolded
-    # Begin DeltaV additions
+    # Begin Panta Rhei additions
     - BodyBagFolded
     - Portafib
-    # End DeltaV additions
+    # End Panta Rhei additions
 ```
 
 A comment on a new imported namespace:
 ```cs
-using Content.Server.Psionics.Glimmer; // DeltaV
+using Content.Server.Psionics.Glimmer; // Panta Rhei
 ```
 
 A pair of comments enclosing a block of added code:
@@ -68,10 +74,10 @@ private EntityUid Slice(...)
 
     _transform.SetLocalRotation(sliceUid, 0);
 
-    // DeltaV - start of deep frier stuff
+    // Panta Rhei - start of deep frier stuff
     var slicedEv = new FoodSlicedEvent(user, uid, sliceUid);
     RaiseLocalEvent(uid, ref slicedEv);
-    // DeltaV - end of deep frier stuff
+    // Panta Rhei - end of deep frier stuff
 
     ...
 }
@@ -103,17 +109,18 @@ MAPS: Mapname
 
 Double-check your diff on GitHub before submitting: look for unintended commits or changes and remove accidental whitespace or line-ending changes.
 
-Additionally for long-lasting PRs, if you see `RobustToolbox` in the changed files you have to revert it, use `git checkout upstream/master RobustToolbox` (replacing `upstream` with the name of your DeltaV-Station/Delta-V remote)
+Additionally for long-lasting PRs, if you see `RobustToolbox` in the changed files you have to revert it, use `git checkout upstream/master RobustToolbox` (replacing `upstream` with the name of your Floof-Station/Panta-Rhei remote)
 
 # Changelogs
+###### _(Update this section again once we finish the changelog stuff. - M3739)_
 
-By default any changelogs goes in the DeltaV changelog, you can use the DeltaV admin changelog by putting `DELTAVADMIN:` in a line after `:cl:`.
+By default any changelogs goes in the Panta Rhei changelog, you can use the Panta Rhei admin changelog by putting `DELTAVADMIN:` in a line after `:cl:`.
 
 Do not use `ADMIN:` as **it will mangle** the upstream admin changelog!
 
 # Additional resources
 
-If you are new to contributing to SS14 in general, have a look at the [SS14 docs](https://docs.spacestation14.io/) or ask for help in `#contribution-help` on [Discord](https://discord.gg/deltav)!
+If you are new to contributing to SS14 in general, have a look at the [SS14 docs](https://docs.spacestation14.io/) or ask for help in `#Development` on [Discord](https://discord.gg/pmxfNx8gRS)!
 
 ## AI-Generated Content
 Code, sprites and any other AI-generated content is not allowed to be submitted to the repository.
